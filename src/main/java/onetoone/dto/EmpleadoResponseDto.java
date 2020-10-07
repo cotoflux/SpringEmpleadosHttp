@@ -1,22 +1,19 @@
 package onetoone.dto;
 
-
 import org.springframework.stereotype.Component;
 
 @Component
 public class EmpleadoResponseDto extends ResponseDto{
-	
-	public String getName() {
-		return name;
+
+    private String nombre;
+    private String cargo;
+    private String salario;
+    
+	public String getNombre() {
+		return nombre;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getSurname() {
-		return surname;
-	}
-	public void setSurname(String surname) {
-		this.surname = surname;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 	public String getCargo() {
 		return cargo;
@@ -24,17 +21,12 @@ public class EmpleadoResponseDto extends ResponseDto{
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
-	public long getSueldo() {
-		return sueldo;
+	public String getSalario() {
+		return salario;
 	}
-	public void setSueldo(long sueldo) {
-		this.sueldo = sueldo;
+	public void setSalario(String salario) {
+		this.salario = salario;
 	}
-	private String name;
-    private String surname;
-    private String cargo;
-    private long sueldo;
-
 
 
 }

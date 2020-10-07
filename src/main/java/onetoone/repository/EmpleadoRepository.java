@@ -1,5 +1,6 @@
 package onetoone.repository;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -21,14 +22,13 @@ import java.util.Optional;
 public class EmpleadoRepository implements IRepository, JpaRepository {
 
     @Autowired
-    private EmpleadoResponseDto EmpleadoResponseDto;
+    private EmpleadoResponseDto empleadoResponseDto;
 
     public EmpleadoResponseDto getUser (String uuid){
-        EmpleadoResponseDto.setName("Nuria");
-        EmpleadoResponseDto.setSurname("Puig");
-        EmpleadoResponseDto.setCargo("director");
-        EmpleadoResponseDto.setSueldo(24000);
-        return EmpleadoResponseDto;
+        empleadoResponseDto.setNombre("Núria");
+        empleadoResponseDto.setCargo("Puig");
+        empleadoResponseDto.setSalario("Mujer");
+        return empleadoResponseDto;
     }
 
 
@@ -152,4 +152,3 @@ public class EmpleadoRepository implements IRepository, JpaRepository {
         return false;
     }
 }
-

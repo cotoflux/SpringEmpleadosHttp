@@ -17,7 +17,7 @@ public class EmpleadoServiceImpl implements IEmpleadoService {
         this.empleadoRepository = empleadoRepository;
     }
 
-    public EmpleadoResponseDto getUser(String uuid){
+    public EmpleadoResponseDto getUser (String uuid){
         return empleadoRepository.getUser(uuid);
     }
 

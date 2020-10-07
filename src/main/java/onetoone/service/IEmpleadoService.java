@@ -4,5 +4,5 @@ import onetoone.dto.EmpleadoResponseDto;
 
 public interface IEmpleadoService {
 
-   EmpleadoResponseDto getUser(String uuid);
+    EmpleadoResponseDto getUser(String uuid);
 }
