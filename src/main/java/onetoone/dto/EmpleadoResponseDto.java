@@ -3,7 +3,7 @@ package onetoone.dto;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserResponseDto extends ResponseDto{
+public class EmpleadoResponseDto extends ResponseDto{
 
     private String name;
     private String surname;

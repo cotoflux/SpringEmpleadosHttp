@@ -10,19 +10,19 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import onetoone.dto.ResponseDto;
-import onetoone.dto.UserResponseDto;
+import onetoone.dto.EmpleadoResponseDto;
 
 import java.util.List;
 import java.util.Optional;
 
 @Repository
 @Transactional
-public class UserRepository implements IRepository, JpaRepository {
+public class EmpleadoRepository implements IRepository, JpaRepository {
 
     @Autowired
-    private UserResponseDto userResponseDto;
+    private EmpleadoResponseDto userResponseDto;
 
-    public UserResponseDto getUser (String uuid){
+    public EmpleadoResponseDto getUser (String uuid){
         userResponseDto.setName("Jonatan");
         userResponseDto.setSurname("Vicente");
         userResponseDto.setGender("Male");

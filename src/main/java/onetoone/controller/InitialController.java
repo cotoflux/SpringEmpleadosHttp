@@ -4,18 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import onetoone.dto.UserResponseDto;
-import onetoone.service.IUserService;
-import onetoone.service.impl.UserServiceImpl;
+import onetoone.dto.EmpleadoResponseDto;
+import onetoone.service.IEmpleadoService;
+import onetoone.service.impl.EmpleadoServiceImpl;
 
 @RestController
 @RequestMapping("/v1")
 public class InitialController {
 
-    private final UserServiceImpl userService;
+    private final EmpleadoServiceImpl userService;
 
     @Autowired
-    public InitialController(UserServiceImpl userService){
+    public InitialController(EmpleadoServiceImpl userService){
         this.userService = userService;
     }
 
@@ -26,11 +26,11 @@ public class InitialController {
 
     //@PutMapping(value ="", consumes = {"application/json"})
     @GetMapping("/user/{uuid}")
-    public ResponseEntity<UserResponseDto> updatePrescription(
+    public ResponseEntity<EmpleadoResponseDto> updatePrescription(
             @PathVariable(name="uuid") String user) throws Exception {
 
 
-        UserResponseDto userResponseDto = userService.getUser("pp");
+        EmpleadoResponseDto userResponseDto = userService.getUser("pp");
 
         System.out.println(userResponseDto.getName());
         System.out.println(userResponseDto.getSurname());
