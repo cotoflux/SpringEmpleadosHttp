@@ -1,6 +1,5 @@
 DROP table IF EXISTS empleados;
 
-
 create table empleados(
 	id int auto_increment,
 	nombre varchar(250),

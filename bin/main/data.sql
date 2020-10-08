@@ -1,7 +1,7 @@
-insert into empleados (nombre, cargo, salario)values('David','Worker', 0);
-insert into empleados (nombre, cargo, salario)values('Ester','Director', 0);
-insert into empleados (nombre, cargo, salario)values('Gloria','Marketing_Director', 0);
-insert into empleados (nombre, cargo, salario)values('Emma','Finance_Director', 0);
+insert into empleados (nombre, cargo, salario)values('David','Chief_Officer', 0);
+insert into empleados (nombre, cargo, salario)values('Ester','Master', 0);
+insert into empleados (nombre, cargo, salario)values('Gloria','Second_Officer', 0);
+insert into empleados (nombre, cargo, salario)values('Emma','Boatswain', 0);
 insert into empleados (nombre, cargo, salario)values('Montse','Chief_Engineer', 0);
-insert into empleados (nombre, cargo, salario)values('Albert','Worker', 0);
-insert into empleados (nombre, cargo, salario)values('Myrna','Worker', 0);
+insert into empleados (nombre, cargo, salario)values('Albert','Machinist', 0);
+insert into empleados (nombre, cargo, salario)values('Myrna','Stewards', 0);
